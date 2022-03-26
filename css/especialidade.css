@@ -1,0 +1,92 @@
+.containerMenu {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.titleMenu {
+    text-align: center;
+    padding: 40px 0;
+    color: grey;
+}
+
+.containerMenu a {
+    color: black;
+    text-decoration-color: #00898E;
+    transition: 0.3s;
+}
+
+.containerMenu a:hover {
+    color: #04D4D4;
+}
+
+.textSpecialties {
+    text-align: center;
+    color: grey;
+}
+
+.textSpecialties p, .textSpecialties h2 {
+    padding: 20px 0;
+}
+
+.tableSpecialties {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+.tableSpecialties img {
+    width: 30%;
+    
+}
+
+.tableSpecialties table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 40px;
+}
+
+th {
+    background-color: #04D4D4;
+    text-align: left;
+    color: white;
+    padding: 10px 5px;
+}
+
+
+tr:nth-of-type(2n+1) {
+    background-color: lightgrey;
+
+}
+
+.tableSpecialties:last-of-type {
+    padding-bottom:5%;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .containerMenu, .textSpecialties, .titleMenu, .tableSpecialties {width: 100%;}
+
+}
+
+@media (max-width: 768px) {
+
+    .containerMenu, .textSpecialties, .titleMenu {width: 100%;}
+    .containerMenu {       
+        flex-wrap: wrap;
+}
+    .tableSpecialties img {display: none;}
+    .tableSpecialties {width: 95%;}
+@media (max-width: 430px) {
+    
+    .containerMenu {
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 18px;
+    justify-content: space-around;
+    }
+    .textSpecialties, .tableSpecialties, .titleMenu {width: 100%;}
+    .tableSpecialties img {display:none;}
+
+}
+

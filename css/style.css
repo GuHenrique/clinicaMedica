@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Menu */
+
+header {
+    background-color: #04D4D4;
+    
+}
+
+.navBar {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logoMenu {
+    display: flex;
+    flex: 2;
+
+}
+
+.linkMenu {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.linkMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+.linkMenu a:hover {
+    color: #00898E;
+
+}
+
+
+/* Main */
+
+.bgImageMain {
+    position: relative;
+    
+}
+
+.bgImageMain img {
+   width: 100%;
+   
+}
+
+.titleMain {
+    position: absolute;
+    top:50%;
+    right: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+/* Main About */
+.containerAbout {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.titleContainer, .containerContact h2, .containerContact p {
+    text-align: center;
+    color: #646767;
+}
+
+.titleContainer h2,  .titleContainer p, .containerContact p, .containerContact h2 {
+    padding-bottom: 20px;
+}
+
+.listContainer img {
+    padding-right: 40px;
+}
+
+
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.listContainer ul {
+    color: #646767;
+    
+}
+
+.listContainer h4 {
+    padding: 0 0 40px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+/* Main Gallery */
+
+.imgSpecialties {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 40px;
+    
+
+}
+
+.imgSpecialties figure {
+    box-shadow: 1px 1px 10px black;
+    
+
+}
+
+.imgSpecialties img {
+    width: 100%;
+}
+
+.imgSpecialties figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+
+}
+
+.schedulesLink {
+    text-align: center;
+    padding: 40px 0;
+    
+
+}
+
+.schedulesLink a {
+    background-color: #04D4D4;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 15px;
+}
+
+
+
+
+/* Main Iframe Map */
+
+
+.containerContact {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.containerContact iframe {
+    width: 100%;
+}
+
+.containerContact span {
+    font-weight: bold;
+}
+
+
+/* End Main */
+
+
+
+/* Footer */
+
+
+footer {
+    background-color: #00898E;
+}
+
+.containerFooter {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    
+}
+
+.containerFooter p {
+    padding: 10px 0;
+}
+
+.containerFooter:last-child {
+    padding-bottom: 50px;
+}
+
+/* End Footer */
+
+@media (min-width: 861px) and (max-width: 1024px) {
+    .navBar {
+        width: 100%;
+    }
+    .containerAbout, .containerContact, .containerFooter, .imgSpecialties{width: 100%;}
+
+}
+
+
+@media (min-width:561px) and (max-width: 860px) {
+    .navBar {width: 100%;}
+    .logoMenu {flex-grow: 1;}
+    h1 {font-size: 20px;}
+    .listContainer img{display: none;}
+    .containerAbout, .containerContact, .containerFooter{width: 100%;}
+    .imgSpecialties{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .imgSpecialties figure {
+        width: calc(100% / 3);
+    }
+
+
+}
+
+
+@media (max-width: 560px) {
+    p{font-size: 12px;}
+    h1 {font-size: 15px;}
+    
+    .navBar {
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .linkMenu {
+        width: 100%;
+        border-top: 1px solid rgba(93, 115, 115, 0.4)
+        
+    }
+    .linkMenu a {
+        padding-top: 10px;
+    }
+    .bgImageMain img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .containerAbout {
+        width: 90%;
+    }
+    .containerAbout img {
+        display: none;
+    }
+
+    .imgSpecialties {
+        flex-flow: wrap;
+        width: 90%;
+       
+    }
+
+    .imgSpecialties img {
+        width: 100%
+    }
+
+    .containerContact {
+        width: 100%;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    .containerFooter {
+        width: 100%;
+    }
+}
